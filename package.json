@@ -2,11 +2,11 @@
   "name": "spid-project-api",
   "version": "1.0.0",
   "description": "This is express project for backend api",
-  "main": "server.js",
+  "main": "pages/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "dev": "nodemon server.js"
+    "start": "node pages/index.js",
+    "dev": "nodemon pages/index.js"
   },
   "repository": {
     "type": "git",
@@ -19,9 +19,13 @@
   },
   "homepage": "https://github.com/XSectorz/SPDProjBackend#readme",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "express-async-handler": "^1.2.0",
-    "mongoose": "^7.4.3"
+    "jsonwebtoken": "^9.0.1",
+    "mongodb": "^5.7.0",
+    "mongoose": "^7.4.3",
+    "nodemon": "^3.0.1"
   }
 }
